@@ -1,0 +1,29 @@
+<!-- simple project which is made see the usage of local storage in browser -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="q">What would you like to do?</h1>
+    <div class="button-container">
+        <button class="styled-button" onclick="altt()">Create</button>
+        <button class="styled-button" onclick="localStorage.clear()">Delete</button>
+        <button class="styled-button" onclick="show()">Show All</button>
+        <button class="styled-button" onclick="showone()">Show</button>
+    </div>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="task-input">
+            <input type="text" id="taskName" placeholder="Task Name">
+            <input type="text" id="taskTime" placeholder="Task Time">
+            <button class="cr">Create Task</button>
+        </div>
+        <div class="task-list" id="taskList"></div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
